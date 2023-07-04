@@ -1,9 +1,9 @@
 [Unit]
-Description=Telegram zabbix notification
+Description=Telegram Load notification
 After=network.target
 
 [Service]
-ExecStart=/bin/bash '/usr/bin/zabbix-telegram-notification.sh'
+ExecStart=/bin/bash '/usr/bin/load-info-telegram.sh'
 Type=simple
 TimeoutStartSec=0
 
