@@ -1,0 +1,11 @@
+[Unit]
+Description=Telegram zabbix notification
+After=network.target
+
+[Service]
+ExecStart=/bin/bash '/usr/bin/zabbix-telegram-notification.sh'
+Type=simple
+TimeoutStartSec=0
+
+[Install]
+WantedBy=multi-user.target
